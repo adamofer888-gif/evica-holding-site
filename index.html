@@ -1,99 +1,914 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <title>EVICA HOLDING AG | Asset Management Suisse</title>
-  <meta name="description" content="EVICA HOLDING AG, société suisse spécialisée en gestion de patrimoine, asset management et fonds d'investissement privés.">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: #f2f4f7;
-      color: #1a1a1a;
-    }
-    header {
-      background: linear-gradient(135deg, #061a2f, #0d2d4f);
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 42px;
-      margin: 0;
-      letter-spacing: 3px;
-    }
-    header p {
-      margin-top: 15px;
-      font-size: 18px;
-      opacity: 0.9;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-    .section {
-      background: white;
-      border-radius: 16px;
-      padding: 40px;
-      margin-bottom: 40px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-    }
-    h2 {
-      color: #061a2f;
-      margin-top: 0;
-    }
-    footer {
-      background: #061a2f;
-      color: white;
-      text-align: center;
-      padding: 35px;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EVICA Holding AG – Gestion de patrimoine & Investment Holding</title>
+    <meta
+      name="description"
+      content="EVICA Holding AG, société suisse de gestion de patrimoine, investment holding et structuration d’actifs. Une approche claire, prudente et orientée résultats."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --bg: #f5f5f7;
+        --bg-alt: #ffffff;
+        --text: #111827;
+        --muted: #6b7280;
+        --primary: #111827;
+        --accent: #c8a45a;
+        --border: #e5e7eb;
+        --badge-bg: #111827;
+        --badge-text: #f9fafb;
+        --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.11);
+        --radius-lg: 18px;
+        --radius-xl: 26px;
+        --transition-fast: 180ms ease-out;
+      }
 
-<header>
-  <h1>EVICA HOLDING AG</h1>
-  <p>Asset Management • Wealth Management • Investissements Privés</p>
-</header>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-<div class="container">
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top left, #eef1ff 0, #f5f5f7 45%, #f9fafb 100%);
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+      }
 
-  <div class="section">
-    <h2>Notre société</h2>
-    <p>
-      EVICA HOLDING AG est une société suisse spécialisée dans la gestion de patrimoine haut de gamme,
-      l’asset management, la structuration de holdings et les fonds d’investissement pour une clientèle privée et institutionnelle.
-    </p>
-  </div>
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
 
-  <div class="section">
-    <h2>Nos activités</h2>
-    <ul>
-      <li>Gestion de patrimoine personnalisée</li>
-      <li>Asset Management & stratégies d’investissement</li>
-      <li>Structuration de holdings internationales</li>
-      <li>Fonds d'investissement privés</li>
-      <li>Conseil financier & planification patrimoniale</li>
-    </ul>
-  </div>
+      .page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
 
-  <div class="section">
-    <h2>Valeurs</h2>
-    <p>
-      Discrétion, rigueur, performance et transparence sont les fondements de notre approche,
-      garantissant une relation de confiance durable avec nos clients.
-    </p>
-  </div>
+      .container {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 18px 18px 32px;
+      }
 
-</div>
+      /* NAVBAR */
 
-<footer>
-  © EVICA HOLDING AG – Suisse | Tous droits réservés
-</footer>
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 16px;
+        margin: 12px auto 8px;
+        max-width: 1120px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+        backdrop-filter: blur(18px);
+        position: sticky;
+        top: 12px;
+        z-index: 20;
+      }
 
-</body>
-</html>
+      .brand {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .brand-line1 {
+        font-size: 0.78rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .brand-line2 {
+        font-size: 1.02rem;
+        font-weight: 650;
+        letter-spacing: 0.06em;
+      }
+
+      .brand-tag {
+        font-size: 0.7rem;
+        color: var(--muted);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 0.88rem;
+      }
+
+      .nav-link {
+        padding: 8px 12px;
+        border-radius: 999px;
+        color: var(--muted);
+        transition: background var(--transition-fast), color var(--transition-fast),
+          transform var(--transition-fast);
+      }
+
+      .nav-link:hover {
+        background: #f3f4f6;
+        color: var(--text);
+        transform: translateY(-1px);
+      }
+
+      .nav-link-primary {
+        background: var(--badge-bg);
+        color: var(--badge-text);
+        font-weight: 500;
+        padding-inline: 18px;
+      }
+
+      .nav-link-primary:hover {
+        background: #020617;
+        transform: translateY(-1px);
+      }
+
+      /* HERO */
+
+      .hero {
+        padding-top: 28px;
+        padding-bottom: 26px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.45fr) minmax(0, 1.1fr);
+        gap: 36px;
+        align-items: center;
+      }
+
+      .hero-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: rgba(17, 24, 39, 0.03);
+        border: 1px solid rgba(17, 24, 39, 0.05);
+        font-size: 0.75rem;
+        color: var(--muted);
+        margin-bottom: 14px;
+      }
+
+      .hero-kicker-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      .hero-title {
+        font-size: clamp(2.1rem, 3.2vw, 2.8rem);
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        margin-bottom: 14px;
+      }
+
+      .hero-title span {
+        color: var(--accent);
+      }
+
+      .hero-subtitle {
+        font-size: 0.95rem;
+        color: var(--muted);
+        max-width: 34rem;
+        line-height: 1.6;
+        margin-bottom: 8px;
+      }
+
+      .hero-subtitle-en {
+        font-size: 0.82rem;
+        color: #9ca3af;
+        margin-bottom: 18px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 9px 18px;
+        font-size: 0.9rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: background var(--transition-fast), color var(--transition-fast),
+          border-color var(--transition-fast), transform var(--transition-fast),
+          box-shadow var(--transition-fast);
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #f9fafb;
+        box-shadow: 0 14px 35px rgba(15, 23, 42, 0.45);
+      }
+
+      .btn-primary:hover {
+        background: #020617;
+        transform: translateY(-1px);
+        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.55);
+      }
+
+      .btn-ghost {
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--text);
+        border-color: rgba(148, 163, 184, 0.5);
+      }
+
+      .btn-ghost:hover {
+        background: #f9fafb;
+        transform: translateY(-1px);
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .hero-meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .hero-meta-label {
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.7rem;
+        color: #9ca3af;
+      }
+
+      .hero-meta-value {
+        font-weight: 500;
+      }
+
+      /* HERO CARD */
+
+      .hero-card {
+        border-radius: var(--radius-xl);
+        background: radial-gradient(circle at 10% 0, #e5e7eb 0, #f9fafb 40%, #e5e7eb 100%);
+        box-shadow: var(--shadow-soft);
+        padding: 20px 18px 18px;
+        border: 1px solid rgba(148, 163, 184, 0.35);
+      }
+
+      .hero-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 14px;
+      }
+
+      .hero-card-title {
+        font-size: 0.9rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #4b5563;
+      }
+
+      .hero-card-badge {
+        font-size: 0.75rem;
+        padding: 3px 10px;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.9);
+        color: #f9fafb;
+      }
+
+      .hero-card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+
+      .metric {
+        padding: 10px 11px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(209, 213, 219, 0.8);
+      }
+
+      .metric-label {
+        font-size: 0.75rem;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .metric-value {
+        font-size: 0.98rem;
+        font-weight: 600;
+      }
+
+      .metric-note {
+        font-size: 0.72rem;
+        color: #9ca3af;
+        margin-top: 2px;
+      }
+
+      .hero-card-footer {
+        font-size: 0.78rem;
+        color: #6b7280;
+        border-top: 1px dashed rgba(209, 213, 219, 0.9);
+        padding-top: 8px;
+      }
+
+      .hero-card-footer span {
+        color: var(--accent);
+        font-weight: 500;
+      }
+
+      /* GENERIC SECTIONS */
+
+      .section {
+        padding: 18px 0 8px;
+      }
+
+      .section-header {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 16px;
+      }
+
+      .section-kicker {
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 0.72rem;
+        color: #9ca3af;
+      }
+
+      .section-title {
+        font-size: 1.15rem;
+        letter-spacing: -0.02em;
+      }
+
+      .section-subtitle {
+        font-size: 0.9rem;
+        color: var(--muted);
+        max-width: 40rem;
+      }
+
+      .section-subtitle-en {
+        font-size: 0.8rem;
+        color: #9ca3af;
+      }
+
+      /* GRID CARDS */
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .card {
+        background: var(--bg-alt);
+        border-radius: var(--radius-lg);
+        padding: 13px 13px 12px;
+        border: 1px solid rgba(209, 213, 219, 0.9);
+        box-shadow: 0 10px 26px rgba(148, 163, 184, 0.15);
+        transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+          border-color var(--transition-fast);
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 40px rgba(148, 163, 184, 0.24);
+        border-color: rgba(55, 65, 81, 0.25);
+      }
+
+      .card-label {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #9ca3af;
+        margin-bottom: 5px;
+      }
+
+      .card-title {
+        font-size: 0.98rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .card-text {
+        font-size: 0.86rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      /* TWO COLUMN SECTION */
+
+      .two-col {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.1fr);
+        gap: 16px;
+        align-items: flex-start;
+      }
+
+      .pill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 6px;
+      }
+
+      .pill {
+        font-size: 0.75rem;
+        padding: 3px 9px;
+        border-radius: 999px;
+        background: #111827;
+        color: #f9fafb;
+      }
+
+      .list {
+        margin: 6px 0 0;
+        padding-left: 18px;
+      }
+
+      .list li {
+        font-size: 0.86rem;
+        color: var(--muted);
+        margin-bottom: 3px;
+      }
+
+      .badge-column {
+        display: grid;
+        gap: 8px;
+      }
+
+      .badge-card {
+        border-radius: 14px;
+        border: 1px solid rgba(209, 213, 219, 0.9);
+        padding: 9px 10px;
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .badge-title {
+        font-size: 0.82rem;
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+
+      .badge-text {
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      /* CONTACT / FOOTER */
+
+      .contact-card {
+        border-radius: var(--radius-lg);
+        background: #020617;
+        color: #e5e7eb;
+        padding: 16px 16px 13px;
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+        gap: 16px;
+      }
+
+      .contact-title {
+        font-size: 1rem;
+        letter-spacing: -0.02em;
+        margin-bottom: 4px;
+      }
+
+      .contact-text {
+        font-size: 0.84rem;
+        color: #9ca3af;
+      }
+
+      .contact-grid {
+        display: grid;
+        gap: 4px;
+        font-size: 0.82rem;
+      }
+
+      .contact-label {
+        color: #6b7280;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+      }
+
+      .contact-value {
+        color: #e5e7eb;
+      }
+
+      .footer {
+        font-size: 0.76rem;
+        color: #9ca3af;
+        padding: 12px 18px 22px;
+        max-width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 6px;
+      }
+
+      .footer a {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
+
+      /* RESPONSIVE */
+
+      @media (max-width: 900px) {
+        .hero-grid,
+        .two-col,
+        .contact-card {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .navbar {
+          border-radius: 18px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+        }
+
+        .nav-links {
+          width: 100%;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          row-gap: 6px;
+        }
+
+        .card-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          padding-inline: 14px;
+        }
+
+        .hero {
+          padding-top: 18px;
+        }
+
+        .card-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .contact-card {
+          padding: 13px 12px 11px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <div class="brand">
+          <div class="brand-line1">Société suisse de holding</div>
+          <div class="brand-line2">EVICA HOLDING AG</div>
+          <div class="brand-tag">Wealth structuring • Investment holding • Asset management</div>
+        </div>
+        <nav class="nav-links">
+          <a href="#accueil" class="nav-link">Accueil</a>
+          <a href="#societe" class="nav-link">Société</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#approche" class="nav-link">Approche</a>
+          <a href="#contact" class="nav-link nav-link-primary">Contact</a>
+        </nav>
+      </header>
+
+      <main class="container">
+        <!-- HERO -->
+        <section id="accueil" class="hero">
+          <div class="hero-grid">
+            <div>
+              <div class="hero-kicker">
+                <span class="hero-kicker-dot"></span>
+                EVICA HOLDING AG &nbsp;•&nbsp; Wollerau, Suisse
+              </div>
+              <h1 class="hero-title">
+                Une holding d’investissement claire,<br />
+                au service de votre <span>patrimoine</span>.
+              </h1>
+              <p class="hero-subtitle">
+                EVICA Holding AG accompagne familles, entrepreneurs et investisseurs privés
+                dans la structuration de leur patrimoine, la gestion de participations et la
+                mise en place de stratégies d’investissement disciplinées.
+              </p>
+              <p class="hero-subtitle-en">
+                EVICA Holding AG supports families and entrepreneurs with long-term wealth
+                structuring and investment holding solutions.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Parler à un représentant</a>
+                <a href="#services" class="btn btn-ghost">Découvrir nos domaines</a>
+              </div>
+
+              <div class="hero-meta">
+                <div class="hero-meta-item">
+                  <div class="hero-meta-label">Profil</div>
+                  <div class="hero-meta-value">Société de holding & gestion de patrimoine</div>
+                </div>
+                <div class="hero-meta-item">
+                  <div class="hero-meta-label">Clients</div>
+                  <div class="hero-meta-value">Familles, entrepreneurs, investisseurs privés</div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="hero-card" aria-label="Bloc de confiance EVICA">
+              <div class="hero-card-header">
+                <div class="hero-card-title">Gouvernance & sécurité</div>
+                <div class="hero-card-badge">Standard suisse</div>
+              </div>
+              <div class="hero-card-grid">
+                <div class="metric">
+                  <div class="metric-label">Contrôle des risques</div>
+                  <div class="metric-value">Approche disciplinée</div>
+                  <div class="metric-note">
+                    Processus documentés, suivi régulier des expositions et scénarios de stress.
+                  </div>
+                </div>
+                <div class="metric">
+                  <div class="metric-label">Confidentialité</div>
+                  <div class="metric-value">Relation discrète</div>
+                  <div class="metric-note">
+                    Information limitée au strict nécessaire, échanges sécurisés et traçabilité.
+                  </div>
+                </div>
+              </div>
+              <div class="hero-card-footer">
+                EVICA Holding AG agit comme <span>point central</span> pour la coordination de
+                vos banques, gérants d’actifs, conseils fiscaux et juridiques, dans un cadre
+                cohérent et maîtrisé.
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- SOCIÉTÉ -->
+        <section id="societe" class="section">
+          <div class="section-header">
+            <div class="section-kicker">La société</div>
+            <h2 class="section-title">Une holding de contrôle, un partenaire de long terme.</h2>
+            <p class="section-subtitle">
+              EVICA Holding AG est une société suisse indépendante de holding et de gestion
+              de patrimoine. Nous supervisons des participations, des portefeuilles financiers
+              et des structures d’investissement, avec un objectif simple&nbsp;:
+              <strong>préserver, structurer et transmettre</strong> le capital.
+            </p>
+            <p class="section-subtitle-en">
+              Independent Swiss holding company focused on long-term capital preservation and
+              disciplined allocation.
+            </p>
+          </div>
+
+          <div class="two-col">
+            <div>
+              <ul class="list">
+                <li>
+                  <strong>Holding d’investissement&nbsp;:</strong> détention et suivi de
+                  participations (sociétés opérationnelles, immobilier, véhicules
+                  d’investissement).
+                </li>
+                <li>
+                  <strong>Gestion de patrimoine&nbsp;:</strong> accompagnement dans la
+                  définition de la stratégie globale, allocation d’actifs, suivi consolidé.
+                </li>
+                <li>
+                  <strong>Asset management délégué&nbsp;:</strong> coordination de gérants,
+                  banques dépositaire et fournisseurs de solutions d’investissement.
+                </li>
+                <li>
+                  <strong>Structuration patrimoniale&nbsp;:</strong> travail en lien étroit
+                  avec fiscalistes, avocats et family offices existants.
+                </li>
+              </ul>
+
+              <div class="pill-list">
+                <span class="pill">Holding d’investissement</span>
+                <span class="pill">Gestion de patrimoine</span>
+                <span class="pill">Asset Management</span>
+                <span class="pill">Structuration</span>
+              </div>
+            </div>
+
+            <div class="badge-column">
+              <div class="badge-card">
+                <div class="badge-title">Indépendance & alignement</div>
+                <div class="badge-text">
+                  EVICA Holding AG ne distribue pas de produits maison et privilégie des
+                  solutions ouvertes, négociées au bénéfice de ses actionnaires.
+                </div>
+              </div>
+              <div class="badge-card">
+                <div class="badge-title">Vision multi-générationnelle</div>
+                <div class="badge-text">
+                  Les décisions sont prises avec un horizon long terme, en tenant compte de la
+                  protection du capital et des futures transmissions.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section">
+          <div class="section-header">
+            <div class="section-kicker">Domaines d’intervention</div>
+            <h2 class="section-title">Ce que nous faisons concrètement pour nos clients.</h2>
+            <p class="section-subtitle">
+              Nous intervenons à la fois au niveau de la holding, du patrimoine financier et
+              des projets d’investissement privés. Chaque mandat est construit sur mesure, en
+              fonction de la situation et des interlocuteurs en place.
+            </p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-label">Holdings & participations</div>
+              <h3 class="card-title">Gouvernance de holding</h3>
+              <p class="card-text">
+                Mise en place de règles claires pour la détention d’actions, la gestion des
+                dividendes, la trésorerie de groupe et les flux entre sociétés et actionnaires.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-label">Patrimoine financier</div>
+              <h3 class="card-title">Asset allocation & suivi</h3>
+              <p class="card-text">
+                Définition de l’allocation stratégique, sélection de gérants ou solutions
+                d’investissement, monitoring des risques et reporting consolidé.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-label">Investissements privés</div>
+              <h3 class="card-title">Co-investissements & deals privés</h3>
+              <p class="card-text">
+                Analyse et structuration d’opportunités (private equity, immobilier,
+                club-deals), en veillant à la cohérence avec le profil global du patrimoine.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-label">Structuration</div>
+              <h3 class="card-title">Architecture patrimoniale</h3>
+              <p class="card-text">
+                Coordination avec les conseils juridiques et fiscaux pour structurer holdings,
+                véhicules d’investissement, financements intra-groupe et transmissions.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-label">Familles & entrepreneurs</div>
+              <h3 class="card-title">Family governance</h3>
+              <p class="card-text">
+                Accompagnement dans la définition de chartes familiales, rôles des membres,
+                règles d’entrée et de sortie du capital, communication intergénérationnelle.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-label">Support opérationnel</div>
+              <h3 class="card-title">Office financier dédié</h3>
+              <p class="card-text">
+                Suivi administratif des structures, préparation de dossiers bancaires,
+                coordination avec les auditeurs, consolidation des informations clés.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- APPROCHE -->
+        <section id="approche" class="section">
+          <div class="section-header">
+            <div class="section-kicker">Approche</div>
+            <h2 class="section-title">Clarté, méthode et exécution disciplinée.</h2>
+            <p class="section-subtitle">
+              Notre rôle n’est pas de promettre des rendements, mais de créer un cadre clair,
+              documenté et suivi, dans lequel chaque décision d’investissement a une place
+              précise et un objectif défini.
+            </p>
+          </div>
+
+          <div class="two-col">
+            <div>
+              <h3 class="card-title">Trois principes structurants</h3>
+              <ul class="list">
+                <li>
+                  <strong>Transparence&nbsp;:</strong> vision consolidée des actifs, des
+                  risques et des flux, pour les actionnaires et leurs conseils.
+                </li>
+                <li>
+                  <strong>Discipline&nbsp;:</strong> processus d’investissement formalisé,
+                  comités réguliers, documentation systématique.
+                </li>
+                <li>
+                  <strong>Prudence&nbsp;:</strong> priorité à la préservation du capital,
+                  gestion des risques avant la recherche de performance.
+                </li>
+              </ul>
+            </div>
+            <div class="badge-column">
+              <div class="badge-card">
+                <div class="badge-title">Un interlocuteur central</div>
+                <div class="badge-text">
+                  EVICA Holding AG agit comme point de coordination entre banques, gérants,
+                  conseillers et actionnaires, pour réduire la complexité et les angles morts.
+                </div>
+              </div>
+              <div class="badge-card">
+                <div class="badge-title">Feuille de route documentée</div>
+                <div class="badge-text">
+                  Chaque mandat débute par une cartographie détaillée du patrimoine, des
+                  structures existantes et des objectifs, pour établir une feuille de route
+                  claire et mesurable.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+          <div class="section-header">
+            <div class="section-kicker">Contact</div>
+            <h2 class="section-title">Entrer en relation avec EVICA Holding AG.</h2>
+            <p class="section-subtitle">
+              Nous privilégions des échanges confidentiels et directs avec les actionnaires,
+              leurs conseils ou family offices. Un premier entretien permet de comprendre le
+              périmètre, les interlocuteurs en place et le niveau d’accompagnement souhaité.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <div>
+              <h3 class="contact-title">Parler à un représentant EVICA</h3>
+              <p class="contact-text">
+                Vous pouvez nous contacter par e-mail ou téléphone pour organiser un échange
+                confidentiel. Aucun document ne doit être transmis avant un premier contact
+                et l’accord préalable de vos conseils habituels.
+              </p>
+            </div>
+            <div class="contact-grid">
+              <div>
+                <div class="contact-label">Coordonnées</div>
+                <div class="contact-value">
+                  EVICA Holding AG<br />
+                  Wyssenfluhstrasse 1<br />
+                  8832 Wollerau &mdash; Suisse
+                </div>
+              </div>
+              <div>
+                <div class="contact-label">Téléphone</div>
+                <div class="contact-value">+41 (0)77 000 00 00</div>
+              </div>
+              <div>
+                <div class="contact-label">E-mail</div>
+                <div class="contact-value">
+                  <a href="mailto:contact@evicaholding.ch">contact@evicaholding.ch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          © <span id="year"></span> EVICA Holding AG — Tous droits réservés.
+        </div>
+        <div>
+          Site informatif uniquement, ne constituant ni une offre de produits financiers ni un
+          conseil en investissement.
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Mise à jour automatique de l'année
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
