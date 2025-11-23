@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EVICA Holding AG – À propos</title>
+    <meta
+      name="description"
+      content="Présentation d’EVICA Holding AG, société suisse indépendante de holding et de gestion de patrimoine."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="navbar">
+        <div class="brand">
+          <div class="brand-line1">Société suisse de holding</div>
+          <div class="brand-line2">EVICA HOLDING AG</div>
+          <div class="brand-tag">Wealth structuring • Investment holding</div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="apropos.html" class="nav-link">À propos</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="contact.html" class="nav-link nav-link-primary">Contact</a>
+        </nav>
+      </header>
+
+      <main class="container">
+        <section class="hero">
+          <div class="hero-inner">
+            <div>
+              <div class="hero-kicker">À propos</div>
+              <h1 class="hero-title">Une structure de contrôle, pas une vitrine.</h1>
+              <p class="hero-text">
+                EVICA Holding AG a pour vocation de donner un cadre clair à la détention et
+                au suivi d’un patrimoine. L’accent est mis sur la stabilité, la clarté et
+                la continuité plutôt que sur les effets d’image.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="two-col">
+            <div>
+              <div class="section-header">
+                <div class="section-kicker">Positionnement</div>
+                <h2 class="section-title">Ce que nous cherchons à apporter.</h2>
+              </div>
+              <ul class="list">
+                <li>Un point central pour la vision globale du patrimoine.</li>
+                <li>Une façon structurée de décider et de documenter.</li>
+                <li>Une continuité dans le temps, au-delà des personnes.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="section-header">
+                <div class="section-kicker">Principes</div>
+                <h2 class="section-title">Quelques principes simples.</h2>
+              </div>
+              <ul class="list">
+                <li>Préservation du capital avant la recherche de performance.</li>
+                <li>Transparence sur les décisions et les intervenants.</li>
+                <li>Respect du rôle de chaque conseil existant.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>© <span id="year"></span> EVICA Holding AG — Suisse.</div>
+        <div>Site informatif uniquement.</div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
