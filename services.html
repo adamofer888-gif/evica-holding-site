@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EVICA Holding AG – Services</title>
+    <meta
+      name="description"
+      content="Les principaux domaines d’intervention d’EVICA Holding AG : holding, gestion de patrimoine et structuration."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="navbar">
+        <div class="brand">
+          <div class="brand-line1">Société suisse de holding</div>
+          <div class="brand-line2">EVICA HOLDING AG</div>
+          <div class="brand-tag">Wealth structuring • Investment holding</div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="apropos.html" class="nav-link">À propos</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="contact.html" class="nav-link nav-link-primary">Contact</a>
+        </nav>
+      </header>
+
+      <main class="container">
+        <section class="hero">
+          <div class="hero-inner">
+            <div>
+              <div class="hero-kicker">Services</div>
+              <h1 class="hero-title">Ce que nous faisons concrètement.</h1>
+              <p class="hero-text">
+                EVICA Holding AG intervient là où il est utile d’avoir une structure
+                centrale : pour les participations, le patrimoine financier et certains
+                projets d’investissement privés.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <div class="section-kicker">Domaines</div>
+            <h2 class="section-title">Axes principaux d’intervention.</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-label">Holding</div>
+              <h3 class="card-title">Gouvernance de holding</h3>
+              <p class="card-text">
+                Structure de détention, règles de distribution, gestion des flux entre
+                sociétés et actionnaires.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-label">Patrimoine</div>
+              <h3 class="card-title">Patrimoine financier</h3>
+              <p class="card-text">
+                Définition de l’allocation d’actifs, coordination des banques et gérants,
+                suivi consolidé.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-label">Structuration</div>
+              <h3 class="card-title">Architecture patrimoniale</h3>
+              <p class="card-text">
+                Travail en lien avec les conseils juridiques et fiscaux pour organiser les
+                holdings, véhicules d’investissement et transmissions.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>© <span id="year"></span> EVICA Holding AG — Suisse.</div>
+        <div>Site informatif uniquement.</div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
