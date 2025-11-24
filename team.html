@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>EVICA Holding AG – Team</title>
-    <meta
-      name="description"
-      content="Équipe dirigeante d’EVICA Holding AG, structure suisse de holding et de gestion patrimoniale."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="page">
-      <header class="navbar">
-        <div class="brand">
-          <div class="brand-line1">Société suisse de holding</div>
-          <div class="brand-line2">EVICA HOLDING AG</div>
-          <div class="brand-tag">Wealth structuring • Investment holding</div>
-        </div>
-        <nav class="nav-links">
-          <a href="index.html" class="nav-link">Accueil</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="apropos.html" class="nav-link">À propos</a>
-          <a href="team.html" class="nav-link">Team</a>
-          <a href="contact.html" class="nav-link nav-link-primary">Contact</a>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Équipe - EVICA Holding AG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Équipe de direction d'EVICA Holding AG, société suisse spécialisée en structuration patrimoniale."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="header-top-row">
+        <div class="branding">Société suisse de holding</div>
+        <div class="branding-strong">EVICA HOLDING AG</div>
+        <div class="branding-sub">Wealth structuring • Investment holding</div>
+      </div>
 
-      <main class="container">
-        <section class="hero">
-          <div class="hero-inner">
-            <div>
-              <div class="hero-kicker">Équipe</div>
-              <h1 class="hero-title">Une direction structurée et responsable.</h1>
-              <p class="hero-text">
-                La gouvernance d’EVICA Holding AG repose sur une organisation claire,
-                fondée sur la responsabilité et la cohérence stratégique.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section-header">
-            <div class="section-kicker">Direction</div>
-            <h2 class="section-title">Équipe dirigeante.</h2>
-          </div>
-
-          <div class="card-grid">
-            <article class="card">
-              <div class="card-label">CEO</div>
-              <h3 class="card-title">Teresa Marie Vermillion</h3>
-              <p class="card-text">
-                Supervision stratégique générale et coordination de l’ensemble des
-                orientations de la holding.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="card-label">COO</div>
-              <h3 class="card-title">Navneet Patel</h3>
-              <p class="card-text">
-                Organisation interne, optimisation des processus et suivi opérationnel.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="card-label">CFO</div>
-              <h3 class="card-title">Adam Ofer</h3>
-              <p class="card-text">
-                Supervision financière, contrôle des flux et structuration budgétaire.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="card-label">CTO</div>
-              <h3 class="card-title">Simon Mulliez</h3>
-              <p class="card-text">
-                Support technique, infrastructure numérique et outils internes.
-              </p>
-            </article>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div>© <span id="year"></span> EVICA Holding AG — Suisse.</div>
-        <div>Site informatif uniquement.</div>
-      </footer>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="apropos.html" class="nav-link">À propos</a>
+        <a href="team.html" class="nav-link nav-link-active">Team</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+  <!-- CONTENU -->
+  <main class="page-wrapper">
+
+    <section class="section">
+      <h2 class="section-title">Notre équipe</h2>
+      <p class="lead">
+        EVICA Holding AG s’appuie sur une direction resserrée, orientée gouvernance,
+        structuration et vision stratégique à long terme.
+      </p>
+    </section>
+
+    <section class="team-grid">
+
+      <!-- CEO -->
+      <div class="team-card">
+        <h3 class="team-name">René Fritschi</h3>
+        <p class="team-role">Chief Executive Officer (CEO)</p>
+        <p class="team-desc">
+          Responsable de la direction stratégique d’EVICA Holding AG, il supervise la
+          structuration globale, la gouvernance et la vision à long terme de la holding.
+        </p>
+      </div>
+
+      <!-- AUTRES MEMBRES (inchangés) -->
+      <div class="team-card">
+        <h3 class="team-name">Membre fondateur</h3>
+        <p class="team-role">Strategy & Structuration</p>
+        <p class="team-desc">
+          Coordination des décisions structurelles et suivi des projets patrimoniaux
+          de long terme.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <h3 class="team-name">Conseiller financier</h3>
+        <p class="team-role">Wealth Advisory</p>
+        <p class="team-desc">
+          Accompagnement dans l’analyse patrimoniale, la cohérence des allocations
+          et la planification stratégique.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 EVICA Holding AG - Tous droits réservés</p>
+  </footer>
+</body>
 </html>
