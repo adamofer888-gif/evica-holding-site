@@ -1,154 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>EVICA HOLDING AG</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #050510, #0b0f2a);
-      color: white;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      padding: 20px 0;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(10px);
-    }
-
-    nav a {
-      color: #cfd8ff;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: 600;
-      letter-spacing: 1px;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #00d4ff;
-    }
-
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 10%;
-      text-align: center;
-    }
-
-    .hero-content {
-      max-width: 1000px;
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      letter-spacing: 4px;
-      margin-bottom: 20px;
-    }
-
-    .subtitle {
-      font-size: 1.4rem;
-      color: #aabfff;
-      margin-bottom: 30px;
-    }
-
-    .description p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 20px;
-      color: #e1e6ff;
-    }
-
-    .buttons {
-      margin-top: 40px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      margin: 10px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s ease;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #2c7bff, #00d4ff);
-      color: white;
-    }
-
-    .btn-secondary {
-      border: 1px solid #2c7bff;
-      color: #2c7bff;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #050510;
-      color: #888;
-      font-size: 0.9rem;
-    }
-  </style>
 </head>
-
 <body>
 
-<nav>
+<header class="main-header">
+  <h1>EVICA HOLDING AG</h1>
+  <p>Gestion de patrimoine • Holding • Investissement stratégique</p>
+</header>
+
+<nav class="navbar">
   <a href="index.html">Accueil</a>
   <a href="services.html">Services</a>
   <a href="apropos.html">À propos</a>
-  <a href="team.html">Équipe</a>
+  <a href="team.html">Team</a>
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>EVICA HOLDING AG</h1>
+<section class="section">
+  <div class="container">
+    <h2>Excellence financière suisse depuis 2009</h2>
 
-    <div class="subtitle">
-      Expertise suisse en gestion de patrimoine et ingénierie financière depuis 2009
-    </div>
+    <p>
+      EVICA HOLDING AG est une société suisse spécialisée dans la gestion de patrimoine,
+      la structuration de holdings et l’investissement stratégique à long terme.
+    </p>
 
-    <div class="description">
-      <p>
-        Fondée en Suisse en <strong>2009</strong>, EVICA HOLDING AG incarne une nouvelle génération 
-        de holdings financières, combinant excellence stratégique, innovation et stabilité institutionnelle.
-      </p>
+    <p>
+      Depuis 2009, nous accompagnons une clientèle internationale dans la protection,
+      l’optimisation et la transmission de leur capital, avec une approche fondée sur la
+      rigueur, la discrétion et la performance durable.
+    </p>
 
-      <p>
-        Notre approche futuriste repose sur une vision long terme orientée vers la préservation, 
-        la croissance et l’optimisation du capital de nos clients dans un environnement financier en constante évolution.
-      </p>
+    <p>
+      Notre expertise couvre l’ingénierie financière, les véhicules d’investissement,
+      l’allocation d’actifs personnalisée et les stratégies patrimoniales complexes.
+    </p>
 
-      <p>
-        Nous concevons des structures patrimoniales durables, discrètes et hautement performantes pour une clientèle internationale exigeante.
-      </p>
-    </div>
-
-    <div class="buttons">
-      <a href="services.html" class="btn btn-primary">Découvrir nos services</a>
-      <a href="contact.html" class="btn btn-secondary">Nous contacter</a>
+    <div class="cta-buttons">
+      <a href="services.html" class="btn">Nos services</a>
+      <a href="contact.html" class="btn btn-outline">Nous contacter</a>
     </div>
   </div>
 </section>
 
-<footer>
-  © 2025 EVICA HOLDING AG – Tous droits réservés
+<footer class="footer">
+  <p>© 2025 EVICA HOLDING AG - Tous droits réservés</p>
 </footer>
 
 </body>
