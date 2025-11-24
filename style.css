@@ -877,3 +877,33 @@ body {
         border-radius: 1rem;
     }
 }
+/* ===== Amélioration lisibilité page Contact ===== */
+
+.contact-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.contact-label {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b7280; /* gris lisible */
+  margin-bottom: 4px;
+}
+
+.contact-value {
+  font-size: 15px;
+  color: #111827; /* texte foncé premium */
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.contact-card h3 {
+  color: #0f172a;
+}
+
+.lead {
+  color: #374151;
+}
