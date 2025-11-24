@@ -2,177 +2,153 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>EVICA Holding AG - Accueil</title>
-  <meta
-    name="description"
-    content="EVICA Holding AG – société suisse de holding dédiée à la structuration, la protection et la transmission de patrimoines privés et entrepreneuriaux."
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <title>EVICA HOLDING AG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #050510, #0b0f2a);
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+    }
+
+    nav a {
+      color: #cfd8ff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d4ff;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 1000px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      color: #aabfff;
+      margin-bottom: 30px;
+    }
+
+    .description p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #e1e6ff;
+    }
+
+    .buttons {
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2c7bff, #00d4ff);
+      color: white;
+    }
+
+    .btn-secondary {
+      border: 1px solid #2c7bff;
+      color: #2c7bff;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #050510;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="header-card">
-    <p class="header-eyebrow">SOCIÉTÉ SUISSE DE HOLDING</p>
-    <h1 class="site-title">EVICA HOLDING AG</h1>
-    <p class="header-subtitle">Wealth Structuring · Investment Holding</p>
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="apropos.html">À propos</a>
+  <a href="team.html">Équipe</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-    <nav class="main-nav">
-      <a href="index.html" class="nav-link active">Accueil</a>
-      <a href="services.html" class="nav-link">Services</a>
-      <a href="apropos.html" class="nav-link">À propos</a>
-      <a href="team.html" class="nav-link">Team</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
+<section class="hero">
+  <div class="hero-content">
+    <h1>EVICA HOLDING AG</h1>
+
+    <div class="subtitle">
+      Expertise suisse en gestion de patrimoine et ingénierie financière depuis 2009
+    </div>
+
+    <div class="description">
+      <p>
+        Fondée en Suisse en <strong>2009</strong>, EVICA HOLDING AG incarne une nouvelle génération 
+        de holdings financières, combinant excellence stratégique, innovation et stabilité institutionnelle.
+      </p>
+
+      <p>
+        Notre approche futuriste repose sur une vision long terme orientée vers la préservation, 
+        la croissance et l’optimisation du capital de nos clients dans un environnement financier en constante évolution.
+      </p>
+
+      <p>
+        Nous concevons des structures patrimoniales durables, discrètes et hautement performantes pour une clientèle internationale exigeante.
+      </p>
+    </div>
+
+    <div class="buttons">
+      <a href="services.html" class="btn btn-primary">Découvrir nos services</a>
+      <a href="contact.html" class="btn btn-secondary">Nous contacter</a>
+    </div>
   </div>
-</header>
+</section>
 
-<main class="page-wrapper">
-
-  <!-- HERO / INTRO -->
-  <section class="section">
-    <span class="section-label">GESTION DE PATRIMOINE & STRUCTURATION</span>
-    <h1 class="section-title">
-      Une holding suisse dédiée à la structuration, la protection
-      et la transmission de votre patrimoine.
-    </h1>
-    <p class="section-intro">
-      EVICA Holding AG accompagne des familles, des entrepreneurs et des investisseurs privés
-      dans la mise en place de structures patrimoniales robustes : sociétés de holding,
-      organisation des participations, gouvernance et préparation de la transmission, dans un
-      cadre suisse stable et exigeant.
-    </p>
-
-    <a href="contact.html" class="btn-primary">
-      Planifier un échange confidentiel
-    </a>
-
-    <div class="credibility-strip">
-      <span><span class="bullet-dot"></span> Domiciliée à Schindellegi (SZ)</span>
-      <span><span class="bullet-dot"></span> Registre du commerce : CH-130.3.014.829-8</span>
-      <span><span class="bullet-dot"></span> IDE / TVA : CHE-115.024.814</span>
-    </div>
-  </section>
-
-  <!-- POURQUOI EVICA -->
-  <section class="section light-section">
-    <h2 class="section-subtitle">Pourquoi EVICA Holding AG&nbsp;?</h2>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>Cadre suisse stable</h3>
-        <p>
-          Inscrite dans un environnement juridique et réglementaire reconnu, la holding
-          offre un cadre robuste pour la détention et l’organisation de patrimoines privés.
-        </p>
-      </div>
-      <div class="about-card">
-        <h3>Vision globale du patrimoine</h3>
-        <p>
-          Nous considérons l’ensemble : participations, immobilier, actifs financiers,
-          projets privés. L’objectif est de donner une lecture claire et cohérente du patrimoine.
-        </p>
-      </div>
-      <div class="about-card">
-        <h3>Gouvernance structurée</h3>
-        <p>
-          Règles écrites, responsabilités définies, mécanismes de décision et de contrôle :
-          la gouvernance est pensée pour durer au-delà des individus.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CE QUE NOUS FAISONS -->
-  <section class="section">
-    <h2 class="section-subtitle">Ce que nous faisons concrètement.</h2>
-    <p class="text-muted">
-      EVICA Holding AG intervient comme structure centrale pour organiser, sécuriser et
-      transmettre des patrimoines souvent fragmentés entre plusieurs banques, sociétés
-      et juridictions.
-    </p>
-
-    <ul class="premium-list">
-      <li>Mise en place et suivi de sociétés de holding patrimoniales.</li>
-      <li>Organisation de la détention d’actifs financiers, immobiliers et de participations privées.</li>
-      <li>Clarification des droits économiques et des règles de gouvernance.</li>
-      <li>Préparation de la transmission à la génération suivante ou à un repreneur.</li>
-    </ul>
-  </section>
-
-  <!-- NOTRE APPROCHE -->
-  <section class="section light-section">
-    <h2 class="section-subtitle">Notre approche.</h2>
-    <ol class="premium-steps">
-      <li>
-        <strong>Analyse factuelle.</strong>
-        Cartographie des structures, actifs, flux et interlocuteurs existants.
-      </li>
-      <li>
-        <strong>Définition du cadre cible.</strong>
-        Clarification du rôle de la holding, des participations et des règles internes.
-      </li>
-      <li>
-        <strong>Mise en œuvre coordonnée.</strong>
-        Travail conjoint avec les conseils juridiques, fiscaux et bancaires.
-      </li>
-      <li>
-        <strong>Suivi dans la durée.</strong>
-        Mise à jour régulière du dispositif en fonction de l’évolution de votre situation.
-      </li>
-    </ol>
-  </section>
-
-  <!-- TÉMOIGNAGES -->
-  <section class="section">
-    <h2 class="section-subtitle">Témoignages (anonymisés).</h2>
-    <div class="testimonials-grid">
-      <article class="testimonial-card">
-        <p class="testimonial-text">
-          « La création d’une holding a permis de clarifier une situation patrimoniale
-          devenue complexe après plusieurs opérations et banques différentes. »
-        </p>
-        <p class="testimonial-author">Client privé, Suisse romande</p>
-      </article>
-
-      <article class="testimonial-card">
-        <p class="testimonial-text">
-          « EVICA Holding AG nous a aidés à structurer la transmission d’actifs entre les
-          générations, avec un cadre clair et documenté pour chacun. »
-        </p>
-        <p class="testimonial-author">Famille entrepreneuriale, canton de Zurich</p>
-      </article>
-
-      <article class="testimonial-card">
-        <p class="testimonial-text">
-          « Le point central n’est pas la performance trimestrielle, mais la stabilité et
-          la cohérence de l’ensemble sur la durée. C’est exactement ce que nous recherchions. »
-        </p>
-        <p class="testimonial-author">Investisseur privé, Suisse centrale</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- CADRE & CONFIDENTIALITÉ -->
-  <section class="section light-section">
-    <h2 class="section-subtitle">Cadre et confidentialité.</h2>
-    <p>
-      Les décisions sont préparées et documentées dans un cadre discret, avec un nombre limité
-      d’interlocuteurs. EVICA Holding AG travaille en coordination avec vos conseils existants
-      (banques, avocats, fiscalistes) afin d’éviter les redondances et de privilégier une
-      approche pragmatique.
-    </p>
-    <p>
-      Pour en savoir plus sur nos prestations détaillées, vous pouvez consulter la page
-      <a href="services.html">Services</a> ou
-      <a href="contact.html">nous contacter directement</a>.
-    </p>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <p>© 2025 EVICA HOLDING AG — Tous droits réservés</p>
+<footer>
+  © 2025 EVICA HOLDING AG – Tous droits réservés
 </footer>
 
 </body>
