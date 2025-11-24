@@ -952,3 +952,43 @@ body {
   color: #555;
   line-height: 1.6;
 }
+/* === ABOUT PREMIUM DESIGN === */
+
+.section-subtitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #081a2d;
+}
+
+.section-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.light-section {
+  background: #f4f6f9;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.premium-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.premium-list li {
+  padding-left: 22px;
+  position: relative;
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 15px;
+}
+
+.premium-list li::before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  color: #2f5f9e;
+  font-size: 18px;
+}
