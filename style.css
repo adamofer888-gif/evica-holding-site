@@ -1018,3 +1018,81 @@ body {
   line-height: 1.6;
   color: #444;
 }
+/* === CONTACT PREMIUM EVICA === */
+
+.contact-page .section-title {
+  color: #0b1625;
+}
+
+.contact-page .section-intro {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+  max-width: 720px;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #0f172a;
+}
+
+.contact-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6b7280;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.contact-value {
+  font-size: 15px;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* Map section */
+
+.map-section {
+  margin-top: 40px;
+}
+
+.map-section .section-subtitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0b1625;
+}
+
+.map-text {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.map-wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  min-height: 260px;
+  border: 0;
+}
