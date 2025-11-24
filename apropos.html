@@ -1,44 +1,89 @@
-export const metadata = {
-  title: "À propos - EVICA HOLDING AG",
-  description: "Présentation de EVICA Holding AG, société suisse spécialisée en gestion de patrimoine et investissements.",
-};
-
-export default function AproposPage() {
-  return (
-    <section className="section-premium">
-      <div className="container-premium">
-        <h1 className="title-premium">À propos de EVICA HOLDING AG</h1>
-
-        <p className="text-premium">
-          EVICA HOLDING AG est une société suisse spécialisée dans la gestion de patrimoine,
-          la structuration financière et la création de solutions d’investissement sur mesure
-          destinées à une clientèle privée et institutionnelle exigeante.
-        </p>
-
-        <p className="text-premium">
-          Fondée sur des valeurs de rigueur, de transparence et de performance durable,
-          EVICA HOLDING AG accompagne ses clients dans la préservation, l’optimisation et la
-          croissance de leurs actifs à long terme.
-        </p>
-
-        <div className="bloc-premium">
-          <h2>Notre vision</h2>
-          <p>
-            Offrir une approche globale, personnalisée et sécurisée de la gestion de fortune,
-            en intégrant innovation, expertise financière et stratégie patrimoniale de haut niveau.
-          </p>
-        </div>
-
-        <div className="bloc-premium">
-          <h2>Notre positionnement</h2>
-          <ul className="list-premium">
-            <li>✔ Gestion de patrimoine privée et institutionnelle</li>
-            <li>✔ Holding et structuration d’actifs</li>
-            <li>✔ Fonds d’investissement et allocations stratégiques</li>
-            <li>✔ Accompagnement financier premium en Suisse</li>
-          </ul>
-        </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>À propos - EVICA Holding AG</title>
+  <meta
+    name="description"
+    content="Présentation d'EVICA Holding AG, société suisse spécialisée en gestion de patrimoine, structuration et investissements à long terme."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER IDENTIQUE AUX AUTRES PAGES -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="header-top-row">
+        <div class="branding">Société suisse de holding</div>
+        <div class="branding-strong">EVICA HOLDING AG</div>
+        <div class="branding-sub">Wealth structuring • Investment holding</div>
       </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="apropos.html" class="nav-link nav-link-active">À propos</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="page-wrapper">
+    <!-- INTRO À PROPOS -->
+    <section class="section">
+      <h2 class="section-title">Une structure de contrôle, pas une vitrine.</h2>
+      <p class="lead">
+        EVICA Holding AG a pour vocation de donner un cadre clair à la détention,
+        à la structuration et au suivi d’un patrimoine. L’accent est mis sur la
+        stabilité, la clarté et la continuité plutôt que sur les effets d’image.
+      </p>
+      <p>
+        La holding s’adresse à des familles, des entrepreneurs et des investisseurs
+        privés qui souhaitent organiser leurs participations, leurs actifs financiers
+        et certains projets d’investissement privés dans un cadre suisse sécurisé.
+      </p>
     </section>
-  );
-}
+
+    <!-- CE QUE NOUS APPORTONS -->
+    <section class="section">
+      <h2 class="section-title">Ce que nous cherchons à apporter.</h2>
+      <ul class="list">
+        <li>Un point central pour la vision globale du patrimoine.</li>
+        <li>Une façon structurée de décider, documenter et suivre les décisions.</li>
+        <li>Une continuité dans le temps, au-delà des personnes et des générations.</li>
+        <li>Une gouvernance claire pour les participations et véhicules d’investissement.</li>
+      </ul>
+    </section>
+
+    <!-- NOTRE POSITIONNEMENT -->
+    <section class="section">
+      <h2 class="section-title">Notre positionnement.</h2>
+      <ul class="list">
+        <li>Discrétion, stabilité et horizon de long terme.</li>
+        <li>Pragmatisme : structures simples, compréhensibles et applicables.</li>
+        <li>Collaboration avec les conseillers externes existants (banques, avocats, fiscalistes).</li>
+        <li>Processus de décision écrits et suivis, plutôt que des arrangements informels.</li>
+      </ul>
+    </section>
+
+    <!-- NOTRE FAÇON DE TRAVAILLER -->
+    <section class="section">
+      <h2 class="section-title">Notre manière de travailler.</h2>
+      <ul class="list">
+        <li>Analyse de la situation actuelle : actifs, structures, gouvernance.</li>
+        <li>Définition d’objectifs réalistes avec les actionnaires ou la famille.</li>
+        <li>Mise en place ou adaptation de la structure de holding et des règles internes.</li>
+        <li>Suivi dans la durée avec un reporting clair et un interlocuteur dédié.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 EVICA Holding AG - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
