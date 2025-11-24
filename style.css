@@ -1445,3 +1445,153 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+/* === HERO PREMIUM ACCUEIL === */
+
+.hero--home {
+  background: radial-gradient(circle at top left, #f4f7fb 0, #f7f9fc 40%, #ffffff 100%);
+  padding: 3.5rem 1.5rem 3rem;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.hero-col {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 2.1rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.hero-lead {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 1.25rem;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid #111827;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111827;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: #111827;
+  color: #ffffff;
+}
+
+.hero-credibility {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.hero-credibility span {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.04);
+}
+
+/* Carte à droite */
+
+.hero-card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.4rem;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.10);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.hero-card-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 0.6rem;
+}
+
+.hero-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.8rem;
+}
+
+.hero-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.hero-card-list li + li {
+  margin-top: 0.4rem;
+}
+
+.hero-card-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #111827;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.3);
+}
+
+.hero-card-link:hover {
+  border-bottom-color: #111827;
+}
+
+/* Branding header léger */
+
+.branding-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 0.15rem;
+}
+
+/* Responsive */
+
+@media (min-width: 900px) {
+  .hero--home {
+    padding: 4rem 2rem 3.5rem;
+  }
+
+  .hero-inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+}
