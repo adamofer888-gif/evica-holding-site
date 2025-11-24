@@ -907,3 +907,48 @@ body {
 .lead {
   color: #374151;
 }
+/* === TEAM PAGE DESIGN PREMIUM === */
+
+.team-grid {
+  display: grid;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background: #f7f9fc;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform .3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card .role {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #7a8b9c;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.team-card h3 {
+  margin: 8px 0;
+  font-size: 20px;
+  color: #0c1a2b;
+}
+
+.team-card .email {
+  font-size: 14px;
+  color: #3d6fa4;
+  margin-bottom: 10px;
+}
+
+.team-card .desc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
