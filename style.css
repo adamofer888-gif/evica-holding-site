@@ -692,3 +692,44 @@ body {
   padding-left: 20px;
   border-left: 3px solid #0a0f2c;
 }
+.section {
+  padding: 80px 0;
+}
+
+.section.alt {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #fff;
+}
+
+.container.narrow {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-kicker {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.section.alt .section-title {
+  color: #f8fafc;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.section.alt p {
+  color: #e2e8f0;
+}
