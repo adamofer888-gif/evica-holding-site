@@ -477,3 +477,56 @@ body {
     align-items: center;
   }
   }
+/* === HERO ANIMATIONS PREMIUM === */
+
+/* Zoom très doux sur l'image de fond */
+.hero-section {
+  background-size: 112%;
+  animation: hero-zoom 20s ease-out forwards;
+}
+
+@keyframes hero-zoom {
+  0% {
+    background-size: 118%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
+/* Apparition progressive du texte et des boutons */
+.hero-section h1,
+.hero-section p,
+.hero-section .hero-cta,
+.hero-section .hero-buttons,
+.hero-section .btn,
+.hero-section .cta-group {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: hero-fade-in 900ms ease-out forwards;
+}
+
+/* Légers décalages pour un effet "staggered" */
+.hero-section h1 {
+  animation-delay: 0.05s;
+}
+
+.hero-section p {
+  animation-delay: 0.15s;
+}
+
+.hero-section .hero-cta,
+.hero-section .hero-buttons,
+.hero-section .cta-group {
+  animation-delay: 0.3s;
+}
+
+.hero-section .btn:nth-child(2) {
+  animation-delay: 0.38s;
+}
+
+@keyframes hero-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
